@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalechalo — Top Destinations</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">Chalechalo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Bookings.html">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                  <a class="btn btn-warning btn-sm" href="#">Sign Up</a>
+                </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-warning btn-sm" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
+        <h1 class="display-5 fw-bold">Top Destinations</h1>
+        <p class="lead mb-4 col-lg-7">From the Great Migration in the Masai Mara to the white-sand beaches of Diani —
+          discover where Chalechalo is taking you next.</p>
+        <form class="d-flex w-100 justify-content-center" role="search" style="max-width: 480px;">
+          <input class="form-control me-2" type="search" placeholder="Search destinations..." aria-label="Search">
+          <button class="btn btn-warning text-dark fw-semibold" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Popular Destinations</h2>
+          <p class="text-muted">Handpicked trips our travellers keep coming back for.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card destination-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top" alt="Safari jeep in the Masai Mara">
+                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Safari</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Masai Mara</h5>
+                <p class="card-text text-muted">Witness the Great Migration and big-five game drives across open savannah.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-semibold text-success">From KSh 45,000</span>
+                  <button type="button" class="btn btn-sm btn-outline-primary explore-btn" data-destination="Masai Mara">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card destination-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top" alt="Beach at Diani">
+                <span class="badge bg-info text-dark position-absolute top-0 start-0 m-3">Beach</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Diani Beach</h5>
+                <p class="card-text text-muted">Powder-white sands, coral reefs and kitesurfing along the South Coast.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-semibold text-success">From KSh 28,000</span>
+                  <button type="button" class="btn btn-sm btn-outline-primary explore-btn" data-destination="Diani Beach">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card destination-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top" alt="Mountains of Mount Kenya">
+                <span class="badge bg-success position-absolute top-0 start-0 m-3">Hiking</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mount Kenya</h5>
+                <p class="card-text text-muted">Trek through rainforest and alpine moorlands to Point Lenana.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-semibold text-success">From KSh 35,000</span>
+                  <button type="button" class="btn btn-sm btn-outline-primary explore-btn" data-destination="Mount Kenya">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card destination-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top" alt="Aerial view of a tropical beach">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3">Island</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Lamu Island</h5>
+                <p class="card-text text-muted">Explore 700-year-old Swahili architecture and dhows on the Lamu Archipelago.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-semibold text-success">From KSh 32,000</span>
+                  <button type="button" class="btn btn-sm btn-outline-primary explore-btn" data-destination="Lamu Island">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card destination-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top" alt="Resort pool at dusk">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3">Luxury</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Watamu</h5>
+                <p class="card-text text-muted">Five-star resorts, sea turtle sanctuaries and sunset dhow cruises.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-semibold text-success">From KSh 60,000</span>
+                  <button type="button" class="btn btn-sm btn-outline-primary explore-btn" data-destination="Watamu">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card destination-card h-100">
+              <div class="position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top" alt="Lake Nakuru flamingos">
+                <span class="badge bg-secondary position-absolute top-0 start-0 m-3">Birding</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Lake Nakuru</h5>
+                <p class="card-text text-muted">Thousands of flamingos, rhinos and leopards in the Rift Valley.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-semibold text-success">From KSh 25,000</span>
+                  <button type="button" class="btn btn-sm btn-outline-primary explore-btn" data-destination="Lake Nakuru">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="destinationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="destinationModalLabel">Destination</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <img id="destImage" src="" class="img-fluid w-100" style="height: 280px; object-fit: cover;" alt="">
+            <div class="p-4">
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge text-bg-warning" id="destCategory"></span>
+                <span class="badge text-bg-success" id="destPrice"></span>
+              </div>
+              <p id="destDescription" class="text-muted"></p>
+              <div class="row g-3 mb-3">
+                <div class="col-12 col-sm-4">
+                  <h6 class="fw-bold mb-1">Best time to visit</h6>
+                  <p class="text-muted mb-0 small" id="destBestTime"></p>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <h6 class="fw-bold mb-1">Suggested duration</h6>
+                  <p class="text-muted mb-0 small" id="destDuration"></p>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <h6 class="fw-bold mb-1">Top experiences</h6>
+                  <p class="text-muted mb-0 small" id="destHighlights"></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-sm-row gap-2">
+                <a href="Bookings.html" class="btn btn-primary flex-sm-fill">Book this trip</a>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white-50 py-4 mt-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Chalechalo Travel. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white-50 text-decoration-none">Privacy</a>
+          <a href="#" class="text-white-50 text-decoration-none">Terms</a>
+          <a href="#" class="text-white-50 text-decoration-none">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+<script>
+  const destinations = {
+    "Masai Mara": {
+      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
+      category: "Safari",
+      price: "From KSh 45,000",
+      description: "Kenya's most famous reserve, home to the annual Great Migration of over 1.5 million wildebeest and the highest density of big cats in Africa. Game drives run at dawn and dusk when predators are most active.",
+      bestTime: "July – October (migration season)",
+      duration: "3 – 5 days",
+      highlights: "Game drives, hot-air balloon safari, Maasai village visit"
+    },
+    "Diani Beach": {
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      category: "Beach",
+      price: "From KSh 28,000",
+      description: "A 17km stretch of powder-white coral sand on the South Coast, fringed by casuarina trees and backed by beach bars. Warm Indian Ocean water makes it ideal for swimming year-round.",
+      bestTime: "December – March, July – October",
+      duration: "2 – 4 days",
+      highlights: "Snorkelling, kitesurfing, sunset dhow cruise, camel rides"
+    },
+    "Mount Kenya": {
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+      category: "Hiking",
+      price: "From KSh 35,000",
+      description: "Africa's second-highest peak at 5,199m, an extinct volcano older than Kilimanjaro. Treks pass through rainforest, bamboo zones and alpine moorlands with dramatic glacier-carved peaks.",
+      bestTime: "January – March, July – October",
+      duration: "3 – 6 days",
+      highlights: "Point Lenana trek, Batian & Nelion climbs, forest walks"
+    },
+    "Lamu Island": {
+      image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80",
+      category: "Island",
+      price: "From KSh 32,000",
+      description: "A UNESCO World Heritage archipelago where time moves at the pace of a sailing dhow. Lamu Old Town is the oldest Swahili settlement in East Africa, with carved doors, narrow alleys and rooftop terraces.",
+      bestTime: "July – September (dry, mild winds)",
+      duration: "3 – 5 days",
+      highlights: "Dhow sailing, Old Town walking tour, Shela beach, siesta culture"
+    },
+    "Watamu": {
+      image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+      category: "Luxury",
+      price: "From KSh 60,000",
+      description: "The Kenyan coast's luxury hub, known for its marine park, pristine beaches and endangered sea turtle nesting sites. Perfect for honeymooners and travellers wanting resort comforts.",
+      bestTime: "December – March, July – October",
+      duration: "3 – 5 days",
+      highlights: "Watamu Marine Park, turtle sanctuary, sunset cruises"
+    },
+    "Lake Nakuru": {
+      image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=80",
+      category: "Birding",
+      price: "From KSh 25,000",
+      description: "A shallow soda lake in the Great Rift Valley famous for hosting over a million flamingos when conditions are right. The park also protects both black and white rhinos.",
+      bestTime: "January – March, July – September",
+      duration: "1 – 2 days",
+      highlights: "Flamingo viewing, rhino sanctuary, Baboon Cliff lookout"
+    }
+  };
+
+  const modalEl = document.getElementById('destinationModal');
+  const modal = new bootstrap.Modal(modalEl);
+
+  document.querySelectorAll('.explore-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const d = destinations[btn.dataset.destination];
+      if (!d) return;
+      document.getElementById('destinationModalLabel').textContent = btn.dataset.destination;
+      document.getElementById('destImage').src = d.image;
+      document.getElementById('destImage').alt = btn.dataset.destination;
+      document.getElementById('destCategory').textContent = d.category;
+      document.getElementById('destPrice').textContent = d.price;
+      document.getElementById('destDescription').textContent = d.description;
+      document.getElementById('destBestTime').textContent = d.bestTime;
+      document.getElementById('destDuration').textContent = d.duration;
+      document.getElementById('destHighlights').textContent = d.highlights;
+      modal.show();
+    });
+  });
+</script>
+
+</body>
+</html>
+</file_path>
+C:\Web_Development\bootstrap\Destinations.html

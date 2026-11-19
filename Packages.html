@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalechalo — Packages</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">Chalechalo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Destinations.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Bookings.html">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                  <a class="btn btn-warning btn-sm" href="#">Sign Up</a>
+                </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-warning btn-sm" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero hero-sm" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-3">
+        <h1 class="display-6 fw-bold">Travel Packages</h1>
+        <p class="lead mb-0 col-lg-7">All-inclusive trips with transport, accommodation, and guided experiences — pick the one that fits your budget.</p>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card package-card h-100">
+              <div class="card-body d-flex flex-column">
+                <h4 class="fw-bold">Explorer</h4>
+                <p class="text-muted">Perfect for weekend getaways and first-time travellers.</p>
+                <h2 class="fw-bold text-primary">KSh 25k<span class="fs-6 text-muted fw-normal"> / person</span></h2>
+                <ul class="list-group list-group-flush my-3">
+                  <li class="list-group-item">2-day / 1-night trip</li>
+                  <li class="list-group-item">Budget hotel accommodation</li>
+                  <li class="list-group-item">Return road transport</li>
+                  <li class="list-group-item">1 guided activity</li>
+                  <li class="list-group-item text-muted">Meals not included</li>
+                </ul>
+                <a href="Bookings.html" class="btn btn-outline-primary mt-auto">Book Explorer</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card package-card featured h-100">
+              <span class="badge bg-primary position-absolute top-0 start-50 translate-middle">Most Popular</span>
+              <div class="card-body d-flex flex-column">
+                <h4 class="fw-bold">Safari Pro</h4>
+                <p class="text-muted">Our best-selling safari experience across the Mara and Rift Valley.</p>
+                <h2 class="fw-bold text-primary">KSh 55k<span class="fs-6 text-muted fw-normal"> / person</span></h2>
+                <ul class="list-group list-group-flush my-3">
+                  <li class="list-group-item">4-day / 3-night trip</li>
+                  <li class="list-group-item">Lodge or tented camp stay</li>
+                  <li class="list-group-item">4x4 safari vehicle &amp; driver</li>
+                  <li class="list-group-item">All park fees &amp; game drives</li>
+                  <li class="list-group-item">Breakfast &amp; dinner included</li>
+                </ul>
+                <a href="Bookings.html" class="btn btn-primary mt-auto">Book Safari Pro</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card package-card h-100">
+              <div class="card-body d-flex flex-column">
+                <h4 class="fw-bold">Luxury Escape</h4>
+                <p class="text-muted">Five-star resorts, private guides, and once-in-a-lifetime moments.</p>
+                <h2 class="fw-bold text-primary">KSh 120k<span class="fs-6 text-muted fw-normal"> / person</span></h2>
+                <ul class="list-group list-group-flush my-3">
+                  <li class="list-group-item">7-day / 6-night trip</li>
+                  <li class="list-group-item">Boutique lodge or villa</li>
+                  <li class="list-group-item">Private vehicle &amp; guide</li>
+                  <li class="list-group-item">All activities &amp; excursions</li>
+                  <li class="list-group-item">Full-board meals &amp; drinks</li>
+                </ul>
+                <a href="Bookings.html" class="btn btn-outline-primary mt-auto">Book Luxury</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-12 col-md-4">
+            <div class="icon-circle bg-primary text-white mx-auto mb-3">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h5>Secure Booking</h5>
+            <p class="text-muted mb-0">Pay safely with M-Pesa or card. Free cancellation up to 7 days before departure.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="icon-circle bg-success text-white mx-auto mb-3">
+              <i class="bi bi-people"></i>
+            </div>
+            <h5>Local Experts</h5>
+            <p class="text-muted mb-0">Every trip is led by certified local guides who know the terrain inside out.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="icon-circle bg-warning text-dark mx-auto mb-3">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h5>24/7 Support</h5>
+            <p class="text-muted mb-0">Real humans on call before, during, and after your trip — wherever you are.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white-50 py-4 mt-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Chalechalo Travel. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white-50 text-decoration-none">Privacy</a>
+          <a href="#" class="text-white-50 text-decoration-none">Terms</a>
+          <a href="#" class="text-white-50 text-decoration-none">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalechalo — Sign Up</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="index.html">Chalechalo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Destinations.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Bookings.html">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-warning btn-sm" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <div class="card auth-card">
+              <div class="row g-0">
+                <div class="col-lg-5 auth-side d-none d-lg-flex flex-column justify-content-end p-4 text-white">
+                  <i class="bi bi-airplane display-4 mb-3"></i>
+                  <h3 class="fw-bold">Start Your Journey</h3>
+                  <p class="mb-0">Create an account to book trips, track your bookings and unlock member-only deals.</p>
+                </div>
+                <div class="col-lg-7">
+                  <div class="card-body p-4 p-md-5">
+                    <h4 class="fw-bold mb-1">Create your account</h4>
+                    <p class="text-muted mb-4">Already have an account? <a href="login.html" class="fw-semibold">Log in</a></p>
+
+                    <form id="signupForm" novalidate>
+                      <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                          <label for="fullName" class="form-label">Full Name</label>
+                          <input type="text" class="form-control" id="fullName" placeholder="Jane Wanjiku" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="phone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control" id="phone" placeholder="07XX XXX XXX" required>
+                        </div>
+                        <div class="col-12">
+                          <label for="email" class="form-label">Email Address</label>
+                          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Min. 8 characters" required minlength="8">
+                          <div class="invalid-feedback">Password must be at least 8 characters.</div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label for="confirmPassword" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirmPassword" placeholder="Repeat password" required>
+                          <div class="invalid-feedback">Passwords do not match.</div>
+                        </div>
+                        <div class="col-12">
+                          <label for="interest" class="form-label">I'm interested in</label>
+                          <select class="form-select" id="interest">
+                            <option selected disabled>Select a travel style...</option>
+                            <option>Safari &amp; Wildlife</option>
+                            <option>Beach &amp; Islands</option>
+                            <option>Mountain Treks</option>
+                            <option>City Breaks</option>
+                            <option>Honeymoon / Luxury</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                            <div class="invalid-feedback">You must accept the terms to continue.</div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-warning fw-semibold w-100 py-2">Create Account</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white-50 py-4 mt-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Chalechalo Travel. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white-50 text-decoration-none">Privacy</a>
+          <a href="#" class="text-white-50 text-decoration-none">Terms</a>
+          <a href="#" class="text-white-50 text-decoration-none">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById('signupForm');
+      const password = document.getElementById('password');
+      const confirm = document.getElementById('confirmPassword');
+
+      form.addEventListener('submit', e => {
+        let valid = true;
+
+        if (password.value !== confirm.value) {
+          confirm.classList.add('is-invalid');
+          valid = false;
+        } else {
+          confirm.classList.remove('is-invalid');
+        }
+
+        if (!form.checkValidity()) {
+          valid = false;
+        }
+
+        if (!valid) {
+          e.preventDefault();
+          form.classList.add('was-validated');
+        }
+      });
+    </script>
+
+</body>
+</html>
